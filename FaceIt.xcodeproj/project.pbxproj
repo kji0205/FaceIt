@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		BF9DC8BC244C68D8007C8691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9DC8BB244C68D8007C8691 /* AppDelegate.swift */; };
 		BF9DC8BE244C68D8007C8691 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9DC8BD244C68D8007C8691 /* SceneDelegate.swift */; };
-		BF9DC8C0244C68D8007C8691 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9DC8BF244C68D8007C8691 /* ViewController.swift */; };
+		BF9DC8C0244C68D8007C8691 /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9DC8BF244C68D8007C8691 /* FaceViewController.swift */; };
 		BF9DC8C3244C68D8007C8691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9DC8C1244C68D8007C8691 /* Main.storyboard */; };
 		BF9DC8C5244C68DC007C8691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF9DC8C4244C68DC007C8691 /* Assets.xcassets */; };
 		BF9DC8C8244C68DC007C8691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9DC8C6244C68DC007C8691 /* LaunchScreen.storyboard */; };
+		BF9DC8D5244C911F007C8691 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9DC8D4244C911F007C8691 /* FaceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BF9DC8B8244C68D8007C8691 /* FaceIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF9DC8BB244C68D8007C8691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF9DC8BD244C68D8007C8691 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF9DC8BF244C68D8007C8691 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF9DC8BF244C68D8007C8691 /* FaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
 		BF9DC8C2244C68D8007C8691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF9DC8C4244C68DC007C8691 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF9DC8C7244C68DC007C8691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF9DC8C9244C68DC007C8691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF9DC8D4244C911F007C8691 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				BF9DC8BB244C68D8007C8691 /* AppDelegate.swift */,
 				BF9DC8BD244C68D8007C8691 /* SceneDelegate.swift */,
-				BF9DC8BF244C68D8007C8691 /* ViewController.swift */,
+				BF9DC8BF244C68D8007C8691 /* FaceViewController.swift */,
+				BF9DC8D4244C911F007C8691 /* FaceView.swift */,
 				BF9DC8C1244C68D8007C8691 /* Main.storyboard */,
 				BF9DC8C4244C68DC007C8691 /* Assets.xcassets */,
 				BF9DC8C6244C68DC007C8691 /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF9DC8C0244C68D8007C8691 /* ViewController.swift in Sources */,
+				BF9DC8C0244C68D8007C8691 /* FaceViewController.swift in Sources */,
 				BF9DC8BC244C68D8007C8691 /* AppDelegate.swift in Sources */,
 				BF9DC8BE244C68D8007C8691 /* SceneDelegate.swift in Sources */,
+				BF9DC8D5244C911F007C8691 /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
