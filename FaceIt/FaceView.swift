@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable
+//@IBDesignable
 class FaceView: UIView
 {
     @IBInspectable
@@ -23,6 +23,22 @@ class FaceView: UIView
     var color: UIColor = UIColor.blue { didSet { setNeedsDisplay() } }
     @IBInspectable
     var lineWidth: CGFloat = 5.0 { didSet { setNeedsDisplay() } }
+    
+    
+    @objc func changeScale(_ recognizer: UIPinchGestureRecognizer) {
+        
+        //        guard recognizer.view != nil else { return }
+        //
+        //        recognizer.view?.transform = (recognizer.view?.transform.scaledBy(x: recognizer.scale, y: recognizer.scale))!
+        
+        switch recognizer.state {
+        case .changed,.ended:    
+            scale *= recognizer.scale
+            recognizer.scale = 1.0
+        default:
+            break
+        }
+    }
     
     private var skullRadius: CGFloat {
         return min(bounds.size.width, bounds.size.height) / 2 * scale
@@ -72,6 +88,7 @@ class FaceView: UIView
         return eyeCenter
     }
     
+    
     private func pathForEye(eye: Eye) -> UIBezierPath
     {
         let eyeRadius = skullRadius / Ratios.SkullRadiusToEyeRadius
@@ -118,7 +135,7 @@ class FaceView: UIView
         case .Right: break
         }
         var browCenter = getEyeCenter(eye: eye)
-        browCenter.y -= skullRadius / Ratios.SkullRadiusToEyeRadius
+        browCenter.y -= skullRadius / Ratios.SkullRadiusToBrowOffset
         let eyeRadius = skullRadius / Ratios.SkullRadiusToEyeRadius
         let tiltOffset = CGFloat(max(-1, min(tilt, 1))) * eyeRadius / 2
         let browStart = CGPoint(x: browCenter.x - eyeRadius, y: browCenter.y - tiltOffset)
